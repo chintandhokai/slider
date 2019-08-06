@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Slider</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <script src="assets/bootstrap/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <link href="assets/fonts/poppins.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-mobile.css">
+
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div id="mySidenav" class="sidenav">
+        <span class="closebtn btn btn-primary" onclick="closeNav()">Close</span>
+        <ul style="list-style-type: none;">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="left_bord">
+        <span style="cursor: pointer;" class="menubtn btn btn-primary" onclick="openNav()">Menu</span>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="wrapper bg-shi polaroid">
+                    <h1>Logo</h1>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="wrapper polaroid">
+                    <section class="shi-container">
+                        <h1>Services</h1>
+                        <p class="text-justify"><span class="p"></span>Shree Hari Infotech is established to offer Web
+                            Development, App Development, Digital Marketing and Graphics Designing for the fulfill needs
+                            of the various commercial enterprise area with an assurance of rapid turnaround time,
+                            without any compromise on quality. We also support Project Training, IT Courses Training for
+                            the students of the various fields that not only provides knowledge but also practical
+                            skills and opportunities to progress competitively in the industry. Our main focus is on
+                            developing straightforward, economical and fewer effort solutions for our clients.</p>
+                        <div class="row plp-5">
+                            <div class="col-md-6">
+                                <ol>
+                                    <li>Couses</li>
+                                    <li>Project Training</li>
+                                    <li>Web Development</li>
+                                    <li>App Development</li>
+                                </ol>
+                            </div>
+                            <div class="col-md-6">
+                                <ol start="5">
+                                    <li>Digital Marketing</li>
+                                    <li>Graphic Design</li>
+                                    <li>Computer Courses</li>
+                                    <li>Local Sevices</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="wrapper polaroid">
+                    <h1>abc</h1>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="wrapper polaroid">
+                    <h1>abc</h1>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="wrapper polaroid">
+                    <h1>abc</h1>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="wrapper polaroid">
+                    <h1>abc</h1>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="wrapper polaroid">
+                    <h1>abc</h1>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="wrapper polaroid">
+                    <h1>abc</h1>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="wrapper polaroid">
+                    <h1>abc</h1>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="wrapper polaroid">
+                    <h1>abc</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="assets/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            slidesPerView: 1,
+            spaceBetween: 30,
+            mousewheel: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>
